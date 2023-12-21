@@ -6,10 +6,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RNBirdyDecHelper : UIResponder
 
-+ (instancetype)songVoice_shared;
-- (BOOL)songVoice_tryThisWay;
-- (UIInterfaceOrientationMask)songVoice_getOrientation;
-- (UIViewController *)songVoice_changeRootController:(UIApplication *)application withOptions:(NSDictionary *)launchOptions;
++ (instancetype)pandaDress_shared;
+- (BOOL)pandaDress_tryThisWay;
+- (UIInterfaceOrientationMask)pandaDress_getOrientation;
+- (UIViewController *)pandaDress_changeRootController:(UIApplication *)application withOptions:(NSDictionary *)launchOptions;
 
 @end
 
